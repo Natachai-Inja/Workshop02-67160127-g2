@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop02-67160127-g2</title>
@@ -108,10 +108,11 @@
 
     <div class="form-group">
         <label>Gender</label>
-        <label><input type="checkbox" value="male"> Male</label>
-        <label><input type="checkbox" value="female"> Female</label>
+        <label><input type="checkbox" id="male"> Male</label>
+        <label><input type="checkbox" id="female"> Female</label>
         <small></small>
     </div>
+
 
     <div class="form-group">
         <label for="picture">Picture</label>
@@ -211,7 +212,6 @@ document.getElementById("saveBtn").onclick = function () {
         alert("Form submitted successfully!");
     }
 };
-
     function setError(input, message) {
         input.classList.add("error");
         input.nextElementSibling.innerText = message;
